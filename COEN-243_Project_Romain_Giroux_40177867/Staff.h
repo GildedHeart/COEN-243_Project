@@ -6,7 +6,7 @@ private:
 	std::string employeeFirstName;
 	std::string employeeLastName;
 	std::string employeeId;
-	std::string dateOfHiring;
+	std::string dateOfHire;
 
 	char bonusCode;
 
@@ -21,7 +21,7 @@ public:
 	Staff(std::string employeeFirstNameInput,
 		std::string employeeLastNameInput,
 		std::string employeeIdInput,
-		std::string dateOfHiringInput,
+		std::string dateOfHireInput,
 
 		char bonusCodeInput,
 
@@ -32,7 +32,7 @@ public:
 		employeeFirstName(employeeFirstNameInput),
 		employeeLastName(employeeLastNameInput),
 		employeeId(employeeIdInput),
-		dateOfHiring(dateOfHiringInput),
+		dateOfHire(dateOfHireInput),
 
 		bonusCode(bonusCodeInput),
 
@@ -47,7 +47,7 @@ public:
 	std::string getEmployeeFirstName();
 	std::string getEmployeeLastName();
 	std::string getEmployeeId();
-	std::string getDateOfHiring();
+	std::string getDateOfHire();
 
 	char getBonusCode();
 
@@ -58,7 +58,7 @@ public:
 	void setEmployeeFirstName(std::string employeeFirstNameInput);
 	void setEmployeeLastName(std::string employeeLastNameInput);
 	void setEmployeeId(std::string employeeIdInput);
-	void setDateOfHiring(std::string dateOfHiringInput);
+	void setDateOfHire(std::string dateOfHireInput);
 
 	void setBonusCode(char bonusCodeInput);
 
@@ -66,10 +66,9 @@ public:
 
 	// Member functions
 
+	void printStaffInfo();
 
-
-
-
+	double calculateSalary();
 
 };
 

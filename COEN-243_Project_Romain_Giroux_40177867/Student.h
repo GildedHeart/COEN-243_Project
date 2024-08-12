@@ -7,15 +7,13 @@ private:
 	std::string studentLastName;
 	std::string studentId;
 	std::string dateOfBirth;
-	std::string programName;
-
 
 	double gpa;
 	double completedCredits;
 
 	int startYear;
 
-
+	char program;
 
 public:
 
@@ -27,13 +25,13 @@ public:
 		std::string studentLastNameInput,
 		std::string studentIdInput,
 		std::string dateOfBirthInput,
-		std::string programNameInput,
-
 
 		double gpaInput,
 		double completedCreditsInput,
 
-		int startYearInput)
+		int startYearInput,
+
+		char programInput)
 
 		:
 
@@ -41,13 +39,13 @@ public:
 		studentLastName(studentLastNameInput),
 		studentId(studentIdInput),
 		dateOfBirth(dateOfBirthInput),
-		programName(programNameInput),
-
 
 		gpa(gpaInput),
 		completedCredits(completedCreditsInput),
 
-		startYear(startYearInput) {};
+		startYear(startYearInput),
+
+		program(programInput) {}
 
 	// Destructor
 
@@ -59,7 +57,8 @@ public:
 	std::string getStudentLastName();
 	std::string getStudentId();
 	std::string getDateOfBirth();
-	std::string getProgramName();
+	
+	char getProgram();
 
 	double getGpa();
 	double getCompletedCredits();
@@ -72,7 +71,8 @@ public:
 	void setStudentLastName(std::string studentLastNameInput);
 	void setStudentId(std::string studentIdInput);
 	void setDateOfBirth(std::string dateOfBirthInput);
-	void setProgramName(std::string programNameInput);
+	
+	void setProgram(char programInput);
 
 	void setGpa(double gpaInput);
 	void setCompletedCredits(double completedCreditsInput);
@@ -80,6 +80,12 @@ public:
 	void setStartYear(int startYearInput);
 
 	// Member functions
+
+	bool completeProgram();
+
+	std::string studentStatus();
+
+	void printStudentInfo();
 
 };
 
