@@ -57,13 +57,13 @@ public:
 	std::string getStudentLastName();
 	std::string getStudentId();
 	std::string getDateOfBirth();
-	
-	char getProgram();
 
 	double getGpa();
 	double getCompletedCredits();
 
 	int getStartYear();
+
+	char getProgram();
 
 	// Setters
 
@@ -71,13 +71,13 @@ public:
 	void setStudentLastName(std::string studentLastNameInput);
 	void setStudentId(std::string studentIdInput);
 	void setDateOfBirth(std::string dateOfBirthInput);
-	
-	void setProgram(char programInput);
 
 	void setGpa(double gpaInput);
 	void setCompletedCredits(double completedCreditsInput);
 
 	void setStartYear(int startYearInput);
+
+	void setProgram(char programInput);
 
 	// Member functions
 

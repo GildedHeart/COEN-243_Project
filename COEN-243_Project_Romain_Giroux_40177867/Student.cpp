@@ -1,8 +1,6 @@
-   #include<iostream>
+#include<iostream>
 #include<string>
-#include<fstream>
 #include "Student.h"
-
 
 // Constructors
 
@@ -20,37 +18,6 @@ Student::Student() {
 	program = NULL;
 }
 
-Student::Student(std::string studentFirstNameInput,
-	std::string studentLastNameInput,
-	std::string studentIdInput,
-	std::string dateOfBirthInput,
-
-	double gpaInput,
-	double completedCreditsInput,
-
-	int startYearInput,
-	
-	char programInput)
-
-	:
-
-	studentFirstName(studentFirstNameInput),
-	studentLastName(studentLastNameInput),
-	studentId(studentIdInput),
-	dateOfBirth(dateOfBirthInput),
-
-	gpa(gpaInput),
-	completedCredits(completedCreditsInput),
-
-	startYear(startYearInput),
-		
-	program(programInput) {}
-
-
-// Destructor
-
-Student::~Student() {}
-
 // Getters
 
 std::string Student::getStudentFirstName() { return studentFirstName; }
@@ -58,13 +25,12 @@ std::string Student::getStudentLastName() { return studentLastName; }
 std::string Student::getStudentId() { return studentId; }
 std::string Student::getDateOfBirth() { return dateOfBirth; }
 
-char Student::getProgram() { return program; }
-
-
 double Student::getGpa() { return gpa; }
 double Student::getCompletedCredits() { return completedCredits; }
 
 int Student::getStartYear() { return startYear; }
+
+char Student::getProgram() { return program; }
 
 // Setters
 
@@ -73,13 +39,13 @@ void Student::setStudentFirstName(std::string studentFirstNameInput) { studentFi
 void Student::setStudentLastName(std::string studentLastNameInput) { studentLastName = studentLastNameInput; }
 void Student::setStudentId(std::string studentIdInput) { studentId = studentIdInput; }
 void Student::setDateOfBirth(std::string dateOfBirthInput) { dateOfBirth = dateOfBirthInput; }
-
-void Student::setProgram(char programInput) { program = programInput; }
 	
 void Student::setGpa(double gpaInput) { gpa = gpaInput; }
 void Student::setCompletedCredits(double completedCreditsInput) { completedCredits = completedCreditsInput; }
 
 void Student::setStartYear(int startYearInput) { startYear = startYearInput; }
+
+void Student::setProgram(char programInput) { program = programInput; }
   
 // Member functions
 

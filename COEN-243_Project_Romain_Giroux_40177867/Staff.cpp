@@ -1,7 +1,6 @@
 #include<iostream>
 #include<string>
 #include<array>
-#include<fstream>
 #include "Student.h"
 #include "Staff.h"
 
@@ -17,27 +16,6 @@ Staff::Staff() {
 
 	currentSalary = 0.0;
 }
-
-Staff::Staff(std::string employeeFirstNameInput,
-	std::string employeeLastNameInput,
-	std::string employeeIdInput,
-	std::string dateOfHireInput,
-
-	char bonusCodeInput,
-
-	double currentSalaryInput)
-
-	:
-
-	employeeFirstName(employeeFirstNameInput),
-	employeeLastName(employeeLastNameInput),
-	employeeId(employeeIdInput),
-	dateOfHire(dateOfHireInput),
-
-	bonusCode(bonusCodeInput),
-
-	currentSalary(currentSalaryInput) {}
-
 
 // Destructor
 
@@ -73,7 +51,7 @@ void Staff::printStaffInfo() {
 		<< "Employee's ID: " << employeeId << std::endl
 		<< "Year employee was hired: " << dateOfHire << std::endl
 		<< "Employee's bonus code: " << bonusCode << std::endl
-		<< "Employee's current pre-bonus salary: " << currentSalary << std::endl
+		<< "Employee's current pre-bonus salary: " << currentSalary << std::endl;
 }
 
 double Staff::calculateSalary() {
@@ -97,7 +75,7 @@ double Staff::calculateSalary() {
 		case 'c':
 		case 'C':
 
-			return currentSalary * 1.03
+			return currentSalary * 1.03;
 
 				break;
 
@@ -115,6 +93,6 @@ double Staff::calculateSalary() {
 			break;
 		}
 	}
-}
+
 
 

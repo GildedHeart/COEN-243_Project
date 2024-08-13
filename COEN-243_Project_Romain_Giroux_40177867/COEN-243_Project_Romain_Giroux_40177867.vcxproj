@@ -130,10 +130,16 @@
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="Staff.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Student_Staff.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Staff.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Student_Staff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="staff.txt" />
+    <Text Include="student.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
