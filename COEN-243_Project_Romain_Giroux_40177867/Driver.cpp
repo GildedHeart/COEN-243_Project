@@ -25,7 +25,7 @@ int main() {
 	std::cout << "The information of the student with the highest GPA is as seen below:\n";
 	studentStaffDriver.highestGpa(); 
 
-	charLine('~', 2);
+	charLine('~', 1);
 
 	std::cout << "The number of undergraduate students is: " << studentStaffDriver.numberOfUndergrad();
 
